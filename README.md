@@ -1,6 +1,6 @@
 # Projects
 
-This repository contains all projects done for Internship.
+This repository contains all projects done completely by me.
 
 Project Number is specified as and when completed.
 
