@@ -4,6 +4,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="bootstrap.css">
 <link rel="stylesheet" href="carousel.css">
+<script src="abcSchool.js"></script>
 <script src="jquery.min.js"></script>
 <script src="bootstrap.js"></script>
 <style>
@@ -140,21 +141,33 @@ clear:both;
 <label>sign up</label></center>
 <div class="input-group form-group">
 <span class="input-group-addon"><i class="fa fa-user"></i></span>
-<input type="text" class="form-control2 input-lg2" placeholder="enter name">
+<input type="text" class="form-control2 input-lg2"  id="name" name="name" placeholder="enter name">
 </div>
 <div class="input-group form-group">
 <span class="input-group-addon"><i class="fa fa-mobile"></i></span>
-<input type="text" class="form-control2 input-lg2" placeholder="enter mobile">
+<input type="text" class="form-control2 input-lg2" name="mobile" id="mobile" placeholder="enter mobile">
+</div>
+<div class="input-group form-group">
+<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+<input type="text" class="form-control2 input-lg2" name="email" id="email" placeholder="enter email">
 </div>
 <div class="form-group input-group">
 <span class="input-group-addon"><i class="fa fa-key"></i></span>
-<input type="password" class="form-control2 input-lg2" placeholder="enter password">
+<input type="password" class="form-control2 input-lg2" id="pwd1" name="password" placeholder="enter password">
+</div>
+<div class="form-group">
+<label>Gender: </label>
+<input type="radio" id="male" name="male">Male
+<input type="radio" id="female" name="female">Female
+</div>
+<div class="form-group">
+<p id="gendererror" style="display:none;color:red">provide gender input</p>
 </div>
 </div>
 
 <div class="modal-footer">
 <center>
-<button type="button" class="btn btn-primary" data-dismiss="modal">SignUp</button>
+<button type="button" class="btn btn-primary"  value="signup" onclick="signup()">SignUp</button>
 <button type="button" class="btn btn-danger">cancel</button>
 </center>
 </div>
@@ -172,17 +185,17 @@ clear:both;
 <div class="modal-body">
 <div class="input-group form-group">
 <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-<input type="text" class="form-control2 input-lg2" placeholder="enter user name">
+<input type="text" class="form-control2 input-lg2" id="user" name="user" placeholder="enter user">
 </div>
 
 <div class="input-group form-group">
 <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-<input type="password" class="form-control2 input-lg2" placeholder="enter password">
+<input type="password" class="form-control2 input-lg2" id="pwd" name="pwd" placeholder="enter password">
 </div>
 </div>
 <div class="modal-footer">
 <center>
-<button type="button" class="btn btn-danger" data-dismiss="modal">Login</button>
+<button type="button" class="btn btn-danger" value="login" onclick="login()">Login</button>
 <button type="button" class="btn btn-primary">cancel</button>
 
 <hr>
