@@ -11,6 +11,9 @@ First Project completed for Intership -> Project1
 Web Page developed for a dummy school ABC
 
 This is the index page for ABC School.
+Where i have implemented navigation bar, carousel, progress bar, footer, and I have divided column into 3 section by using bootstrap.
+I have used font awesome to apply some icons ex:-facebook, twitter,envelope,google plus.
+
 
 Index Page Link : https://github.com/sneha313/Projects/blob/master/Project1/abcSchool-sneha.html
 
