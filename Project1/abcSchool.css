@@ -126,6 +126,7 @@
     background-color: #15224f;
     min-height: 30px;
     width: 100%;
+	margin-bottom:-40px;
 }
 .copyright {
     color: #fff;
