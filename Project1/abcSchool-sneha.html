@@ -1,7 +1,9 @@
 <html>
 <head>
 <link rel="stylesheet" href="abcSchool.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 <link rel="stylesheet" href="bootstrap.css">
 <link rel="stylesheet" href="carousel.css">
 <script src="abcSchool.js"></script>
@@ -15,26 +17,6 @@ body{
 background:#f2f2f2;
 }
 
-.inner-addon{
-position:relative;
-}
-/* style icon*/
-.inner-addon .glyphicon{
-position:absolute;
-padding:5px;
-pointer-events:none;
-}
-/*align icon*/
-
-
-.left-addon .glyphicon{
-right:3px;
-margin-top:4px;
-}
-
-
-
-/*add padding*/
 
 
 
@@ -112,15 +94,14 @@ clear:both;
 </ul>
 </div>
 <div class="clear"></div>-->
-
-<div class="container">
 <div class="row">
-<div class="col-sm-12">
-<ul class="nav nav-tabs">
-<li class="active"><a href="abcSchool-sneha.html">Home</a></li>
-<li><a href="#" data-toggle="modal" data-target="#contact">Contact</a></li>
-
-<div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="container-fluid">
+  <div class="btn-group btn-group-justified site">
+    <a href="#" class="btn btn-primary active1">Home</a>
+    <a href="#" class="btn btn-primary">About US</a>
+	<a href="#" class="btn btn-primary" data-toggle="modal" data-target="#contact">Contact</a>
+	
+	<div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 <div class="modal-dialog modal-md" role="document">
 <div class="modal-content">
 <div class="modal-header">
@@ -151,9 +132,10 @@ clear:both;
 </div><!--modal dialog end--> 
 </div><!--modal fade end-->
 <!--modal end-->
-
-<li><a href="#" data-toggle="modal" data-target="#signup">Sign Up</a></li>
-<div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	
+    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#signup">Sign Up</a>
+	
+	<div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 <div class="modal-dialog modal-md" role="document">
 <div class="modal-content">
 <div class="modal-header">
@@ -198,8 +180,10 @@ clear:both;
 </div>
 </div>
 </div>
-<li><a href="#" data-toggle="modal" data-target="#login">Login</a></li>
-<div class="modal fade" id="login" role="dialog" tabindex="-1" aria-labelledby="myModalLabel">
+	
+    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#login">Login</a>
+	
+	<div class="modal fade" id="login" role="dialog" tabindex="-1" aria-labelledby="myModalLabel">
 <div class="modal-dialog modal-sm" role="document">
 <div class="modal-content">
 <div class="modal-header">
@@ -229,10 +213,9 @@ clear:both;
 </div>
 </div>
 </div>
-</ul>
+	
+  </div>
 </div>
-</div>
-</div><!--container div close-->
 
 <br>
 <div class="container-fluid">
@@ -254,20 +237,26 @@ clear:both;
 </div><!--media div close-->
 </div><!--first 5 col close-->
 
-<div class="col-sm-6">
+<div class="col-sm-5">
 <h2>Introduction</h2>
 <p>Welcome to ABC school.This school provides world class facilities and best education. This school also provides extra curriculum activities to enhance the ability of atudent and survive in this world.</p>
 			  
 </div><!--4 column close-->
 
 
-<div class="col-sm-2" style="margin-top:15px">
+<div class="col-sm-3" style="margin-top:5px">
 
 					
-			  <div class="inner-addon left-addon">
-<i class="glyphicon glyphicon-search"></i>
-<input type="text" class="form-control" placeholder="search here">
+			  <div class="form-group input-group">
+			  
+					<span class="input-group-addon">
+
+<i class="glyphicon glyphicon-search" style="padding-top:-20px"></i>
+</span>
+<input type="text" class="form-control2"style="width:170;border-radius:0" placeholder="search here">
 </div>
+
+<button class="btn btn-primary" style="margin-top:-49px; border-radius:0;margin-left:219px">search</button>
 
 
 </div><!--3 column close-->
