@@ -10,7 +10,9 @@ First Project completed for Intership -> Project1
 
 Web Page developed for a dummy school ABC
 
-This project is live via netlify. Below is the link :
+This project is live via netlify. 
+Below is the link :
+
 http://sneha313.netlify.com/project1/abcschool-sneha
 
 This is the index page for ABC School.
@@ -23,7 +25,10 @@ JavaScript is used for validation in login and signup tab.
 
 ## Project 2 (Video Slider)
 
-This project is live via netlify. Below is the link :
+This project is live via netlify. 
+
+Below is the link :
+
 http://sneha313.netlify.com/project2/videoslider
 
 This is a web page designed having a video back ground.
