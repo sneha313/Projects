@@ -12,19 +12,31 @@
 <style>
 .container-fluid{
 width:100%;
-margin-top:-21px;
+margin-top:-10px;
 }
+.carousel{
+margin-top:-20px;
 
+}
 
 .form-control{
 width:250px;
 margin-left:90px;
 }
+
+.carousel .item {
+    width: 100%; /*slider width*/
+    max-height: 600px; /*slider height*/
+}
+.carousel .item img {
+    width: 100%; /*img width*/
+}
+
 </style>
 </head>
 <body>
 <nav class="navbar navbar-inverse navbar-static-top">
-<div class="container">
+<div class="container-fluid">
 <div class="navbar-header">
 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 <span class="sr-only">Toggle navigation</span>
@@ -46,11 +58,7 @@ margin-left:90px;
 </div><!--container div close-->
 </nav><!--nav close-->
 
-<div class="container-fluid">
-
-<div class="row">
-<div class="col-sm-12">
-<header id="myCarousel" class="carousel slide">
+<div id="myCarousel" class="carousel slide">
       <!-- Indicators -->
       <ol class="carousel-indicators" style="margin-bottom:460px;">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -60,12 +68,36 @@ margin-left:90px;
       </ol>
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-          <img class="first-slide" src="3.jpg" alt="First slide">
+          <img class="first-slide" style="width:100%" src="1.jpg" alt="First slide">
           <div class="container-fluid">
             <div class="carousel-caption1">
 			<div class="row">
-			<div class="col-sm-5" id="carousel_pause" style="background-color: hsla(0, 100%, 70%, 0.4);height:521px;width:500px margin-left:-300px;">
-			<center><h1 style="margin-top:50px; margin-bottom:80px;color:black;">Slider 1</h1></center>
+			<div class="col-sm-5" id="carousel_pause" style="background-color: hsla(0, 100%, 70%, 0.4);height:510px;width:500px margin-left:-300px;">
+			
+			<h1 style="margin-top:50px; margin-bottom:80px;color:black;margin-left:90px">Slider 1</h1>
+			<p style=" font-size:18px;color:black;margin-top:-50px; margin-bottom:30px; margin-left:90px">SOLO travelling for a month</p>
+			<input type="text" class="form-control" id="email" style="background:white;"  placeholder="enter email">
+			<select class="form-control">
+			<option>Choose Location</option>
+			<option>Bangalore</option>
+			<option>Delhi</option>
+			<option>Mumbai</option>
+			<option>Kolkata</option>
+			</select>
+			
+			<button  class="btn btn-default" style="border:2px solid black;margin-left:90px">Say hello to NIRA</button>
+			</div>
+			</div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="second-slide" style="width:100%" src="1.jpg" alt="Second slide">
+             <div class="container-fluid">
+            <div class="carousel-caption1">
+			<div class="row">
+			<div class="col-sm-5" id="carousel_pause" style="background-color: hsla(0, 100%, 70%, 0.4);height:510px;width:500px margin-left:-300px;">
+			<center><h1 style="margin-top:50px; margin-bottom:80px;color:black;">Slider 2</h1></center>
 			<input type="text" class="form-control" id="email" style="background:white;"  placeholder="enter email">
 			<select class="form-control">
 			<option>Choose Location</option>
@@ -82,47 +114,46 @@ margin-left:90px;
           </div>
         </div>
         <div class="item">
-          <img class="second-slide" src="3.jpg" alt="Second slide">
+          <img class="third-slide" src="1.jpg" style="width:100%" alt="Third slide">
            <div class="container-fluid">
             <div class="carousel-caption1">
 			<div class="row">
-			<div class="col-sm-5" id="carousel_pause" style="background-color:#DCDCDC;opacity:0.5;height:521px;width:500px margin-left:-300px;">
-			<h1 style="margin-top:50px; color:black;opacity:1.8">Slider 1</h1>
-			
-			
+			<div class="col-sm-5" id="carousel_pause" style="background-color: hsla(0, 100%, 70%, 0.4);height:510px;width:500px margin-left:-300px;">
+			<center><h1 style="margin-top:50px; margin-bottom:80px;color:black;">Slider 3</h1></center>
+			<input type="text" class="form-control" id="email" style="background:white;"  placeholder="enter email">
+			<select class="form-control">
+			<option>Choose Location</option>
+			<option>Bangalore</option>
+			<option>Delhi</option>
+			<option>Mumbai</option>
+			<option>Kolkata</option>
+			</select>
+			<center>
+			<button  class="btn btn-default" style="border:2px solid black">Say hello to NIRA</button></center>
 			</div>
-			<div class="col-sm-7"></div>
-			</div>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img class="third-slide" src="3.jpg" alt="Third slide">
-           <div class="container-fluid">
-            <div class="carousel-caption1">
-			<div class="row">
-			<div class="col-sm-5" id="carousel_pause" style="background-color:#DCDCDC;opacity:0.5;height:521px;width:500px margin-left:-300px;">
-			<h1 style="margin-top:50px; color:black;opacity:1.8">Slider 1</h1>
-			
-			
-			</div>
-			<div class="col-sm-7"></div>
 			</div>
             </div>
           </div>
         </div>
 		
 		 <div class="item">
-          <img class="four-slide" src="3.jpg" alt="four slide">
-          <div class="container-fluid">
+          <img class="four-slide" src="1.jpg" style="width:100%" alt="four slide">
+         <div class="container-fluid">
             <div class="carousel-caption1">
 			<div class="row">
-			<div class="col-sm-5" id="carousel_pause" style="background-color:#DCDCDC;opacity:0.5;height:521px;width:500px margin-left:-300px;">
-			<h1 style="margin-top:50px; color:black;opacity:1.8">Slider 1</h1>
-			
-			
+			<div class="col-sm-5" id="carousel_pause" style="background-color: hsla(0, 100%, 70%, 0.4);height:510px;width:500px margin-left:-300px;">
+			<center><h1 style="margin-top:50px; margin-bottom:80px;color:black;">Slider 4</h1></center>
+			<input type="text" class="form-control" id="email" style="background:white;"  placeholder="enter email">
+			<select class="form-control">
+			<option>Choose Location</option>
+			<option>Bangalore</option>
+			<option>Delhi</option>
+			<option>Mumbai</option>
+			<option>Kolkata</option>
+			</select>
+			<center>
+			<button  class="btn btn-default" style="border:2px solid black">Say hello to NIRA</button></center>
 			</div>
-			<div class="col-sm-7"></div>
 			</div>
             </div>
           </div>
@@ -130,10 +161,8 @@ margin-left:90px;
       </div>
      <a class="left carousel-control" href="#myCarousel" data-slide="prev" onclick="$('#myCarousel').carousel('prev')"></a>
 <a class="right carousel-control" href="#myCarousel" data-slide="next" onclick="$('#myCarousel').carousel('next')"></a>
-    </header><!-- /.carousel -->
-</div>
-</div>
-</div>
+    </div><!-- /.carousel -->
+
 <script>
  $(document).ready(function(){
     $('#myCarousel').carousel({
