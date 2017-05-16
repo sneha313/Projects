@@ -166,7 +166,7 @@ margin-left:90px;
 <script>
  $(document).ready(function(){
     $('#myCarousel').carousel({
-      interval: 3000,
+//      interval: 3000,
     });
   }); 
 </script> 
@@ -183,7 +183,10 @@ jQuery(document).bind('keyup', function(e) {
   }
 
 });
-
+email.addEventListener('keydown', function(e){
+    if(e.keyCode == 37 || e.keyCode == 39)
+        e.preventDefault();
+});
 </script>
 <script>
 $("#carousel_pause").hover(
@@ -195,5 +198,6 @@ $("#carousel_pause").hover(
     }
   );
 </script>
+	
 </body>
 </html>
