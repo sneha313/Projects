@@ -183,10 +183,11 @@ jQuery(document).bind('keyup', function(e) {
   }
 
 });
-$("input:text").focus(function(e){
-   if(e.keyCode == 37 || e.keyCode == 39) 
+$(document).on('keyup click', 'input:text', function(e) {
+					var code = e.keyCode || e.which;
+					  if(code == 37 || code == 39) 
        e.preventDefault();
-});
+}); 
 </script>
 <script>
 $("#carousel_pause").hover(
