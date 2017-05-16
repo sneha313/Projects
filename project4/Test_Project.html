@@ -157,19 +157,13 @@ margin-left:90px;
 			</div>
             </div>
           </div>
+			 
         </div>
       </div>
-     <a class="left carousel-control" href="#myCarousel" data-slide="prev" onclick="$('#myCarousel').carousel('prev')"></a>
-<a class="right carousel-control" href="#myCarousel" data-slide="next" onclick="$('#myCarousel').carousel('next')"></a>
+	<a class="left carousel-control" href="#myCarousel" data-slide="prev"></a>
+ <a class="right carousel-control" href="#myCarousel" data-slide="next"></a>
     </div><!-- /.carousel -->
 
-<script>
- $(document).ready(function(){
-    $('#myCarousel').carousel({
-      interval: 3000,
-    });
-  }); 
-</script> 
 <script type="text/javascript">
 
 jQuery(document).bind('keyup', function(e) {
@@ -183,17 +177,12 @@ jQuery(document).bind('keyup', function(e) {
   }
 
 });
-
+$(document).on('keyup click', 'input:text', function(e) {
+					var code = e.keyCode || e.which;
+					  if(code == 37 || code == 39) 
+       e.preventDefault();
+}); 
 </script>
-<script>
-$("#carousel_pause").hover(
-    function(){
-        $("#email").carousel('pause');
-     },
-    function() {
-      $("#myCarousel").carousel('cycle');
-    }
-  );
-</script>
+	
 </body>
 </html>
