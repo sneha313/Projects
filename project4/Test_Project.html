@@ -166,7 +166,7 @@ margin-left:90px;
 
 <script type="text/javascript">
 
-$(document).on('keypress', function(e) {
+$(document).bind('keyup', function(e) {
     var tag = e.target.tagName.toLowerCase();
     if ( e.which === 39 && tag != 'input' && tag != 'textarea') {
          jQuery('a.carousel-control.right').trigger('click');
