@@ -177,11 +177,9 @@ jQuery(document).bind('keyup', function(e) {
   }
 
 });
-$(document).on('keyup click', 'input:text', function(e) {
-					var code = e.keyCode || e.which;
-					  if(code == 37 || code == 39) 
-       e.preventDefault();
-}); 
+jQuery('#email').bind('keypress', function(e) {
+    e.stopPropagation(); 
+});
 </script>
 	
 </body>
