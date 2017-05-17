@@ -40,6 +40,15 @@ This has been built on HTML, CSS, BootStrap, JQuery and JavaScript.
 
 ## Project 4 (Image Carousel with key control)
 
+This project is live viw netlify.
+
+Below is the link :
+
+http://sneha313.netlify.com/project4/test_project
+
+This web page is having image caurosel which works on left/right arrow hits.
+I am working to fix mouse over input text event.
+
 
 Please watch this space for upcoming projects based on web technologies.
 
