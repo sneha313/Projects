@@ -46,8 +46,10 @@ Below is the link :
 
 http://sneha313.netlify.com/project4/test_project
 
-This web page is having image caurosel which works on left/right arrow hits.
-I am working to fix mouse over input text event.
+This web page is having image caurosel which works on left/right arrow key hits.
+The left/right arrow key hits will not be functional once the hit is over input text area.
+This has been built on HTML, CSS, BootStrap, JQuery and JavaScript.
+
 
 
 Please watch this space for upcoming projects based on web technologies.
