@@ -177,8 +177,16 @@ jQuery('myCarousel').bind('keypress', function(e) {
   }
 
 });
-jQuery('#email').bind('keypress', function(e) {
-    e.stopPropagation(); 
+jQuery('#email').unbind('keypress', function(e) {
+
+  if (e.keyCode==39) {
+      jQuery('a.carousel-control.right').trigger('click');
+  }   
+
+  else if(e.keyCode==37){
+      jQuery('a.carousel-control.left').trigger('click');
+  }
+
 });
 </script>
 	
