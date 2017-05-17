@@ -166,16 +166,14 @@ margin-left:90px;
 
 <script type="text/javascript">
 
-jQuery(document).bind('keyup', function(e) { 
-  if (e.keyCode == 39) {
-      jQuery('a.carousel-control.right').trigger('click');
-  }   
-
-  else if(e.keyCode == 37 tag != 'input' && tag != 'textarea'){
-      jQuery('a.carousel-control.left').trigger('click');
-  }
-
+$(document).on('keypress', function(e) {
+    var tag = e.target.tagName.toLowerCase();
+    if ( e.which === 39 && tag != 'input' && tag != 'textarea') 
+         jQuery('a.carousel-control.right').trigger('click');
+		 if ( e.which === 37 && tag != 'input' && tag != 'textarea') 
+         jQuery('a.carousel-control.right').trigger('click');
 });
+	
 </script>
 	
 </body>
