@@ -166,13 +166,13 @@ margin-left:90px;
 
 <script type="text/javascript">
 
-jQuery(document).bind('keyup', function(e) {
+jQuery(document).bind('keypress', function(e) {
 
-  if (e.keyCode==39 && tag != 'input') {
+  if (e.which === 39 && tag != 'input') {
       jQuery('a.carousel-control.right').trigger('click');
   }   
 
-  else if(e.keyCode==37 && tag != 'input'){
+  else if(e.which === 37 && tag != 'input'){
       jQuery('a.carousel-control.left').trigger('click');
   }
 
