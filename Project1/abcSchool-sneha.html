@@ -17,10 +17,6 @@ clear:both;
 body{
 background:#f2f2f2;
 }
-
-
-
-
 </style>
 <!--<style>
 #img{
@@ -208,7 +204,53 @@ clear:both;
 <button type="button" class="btn btn-primary">cancel</button>
 
 <hr>
-<a href="#">I am a new user</a>
+<a href="#" data-toggle="modal" data-target="#signup">I am a new user</a>
+
+	<div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal-dialog modal-md" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" aria-label="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+<h2 class="modal-title" id="myModalLabel">signup</h2>
+</div>
+<div class="modal-body">
+<center>
+<label>sign up</label></center>
+<div class="input-group form-group">
+<span class="input-group-addon"><i class="fa fa-user"></i></span>
+<input type="text" class="form-control2 input-lg2"  id="name" name="name" placeholder="enter name">
+</div>
+<div class="input-group form-group">
+<span class="input-group-addon"><i class="fa fa-mobile"></i></span>
+<input type="text" class="form-control2 input-lg2" name="mobile" id="mobile" placeholder="enter mobile">
+</div>
+<div class="input-group form-group">
+<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+<input type="text" class="form-control2 input-lg2" name="email" id="email" placeholder="enter email">
+</div>
+<div class="form-group input-group">
+<span class="input-group-addon"><i class="fa fa-key"></i></span>
+<input type="password" class="form-control2 input-lg2" id="pwd1" name="password" placeholder="enter password">
+</div>
+<div class="form-group">
+<label>Gender: </label>
+<input type="radio" id="male" name="male">Male
+<input type="radio" id="female" name="female">Female
+</div>
+<div class="form-group">
+<p id="gendererror" style="display:none;color:red">provide gender input</p>
+</div>
+</div>
+
+<div class="modal-footer">
+<center>
+<button type="button" class="btn btn-primary"  value="signup" onclick="signup()">SignUp</button>
+<button type="button" class="btn btn-danger">cancel</button>
+</center>
+</div>
+</div>
+</div>
+</div>
 </center>
 </div>
 </div>
@@ -334,7 +376,7 @@ clear:both;
 	  </div><!--12 column close-->
 	  </div><!--row div close-->
     </div><!-- /.carousel -->
-
+<p id="intro" style="display:none;color:red"></p>
 	<div class="container">
 	<div class="row">
 	<div class="col-sm-4">
