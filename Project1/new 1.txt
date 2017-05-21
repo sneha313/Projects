@@ -1,0 +1,7 @@
+<div class="carousel slide" id="mycarousel">
+<ul class="indicator">
+<li>0</li>
+<li>1</li>
+<li>2</li>
+</ul>
+</div>

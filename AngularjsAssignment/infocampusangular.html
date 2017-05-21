@@ -1,0 +1,89 @@
+<html>
+<head>
+<link rel="stylesheet" href="assets/css/bootstrap.css">
+<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="assets/css/carousel.css">
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="js/angular.js"></script>
+<script src="js/route.js"></script>
+<script src="js/sanitize.js"></script>
+<style>
+.carousel
+{
+margin-top:-20px;
+}
+</style>
+</head>
+<body>
+<!--navbar start-->
+
+<nav class="navbar navbar-default navbar-static-top">
+<div class="container">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button><!--button close-->
+<a class="navbar-brand" href="#">Infocampus Logics</a>
+</div><!--navbar header-->
+<div id="navbar" class="navbar-collapse collapse">
+
+<div ng-app="info">
+<ul class="nav navbar-nav">
+<li class="active"><a href="#/">Home</a></li>
+<li><a href="#about">About Us</a></li>
+<li><a href="#contact">Contact Us</a></li>
+<li class="dropdown"> 
+<a href="#services" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Our Services <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#software">Software Designing</a></li>
+                <li><a href="#application">Application Development</a></li>
+                <li><a href="#Logo">Logo Designing</a></li>
+              </ul>
+            </li>
+</ul>
+
+<ul class="nav navbar-nav navbar-right">
+
+<li><a href="#enquiry">Enquiry</a></li>
+<li><a href="#SignUp">Sign Up</a></li>
+<li><a href="#Login">Login</a></li>
+</ul>
+
+<div class="ng-view"></div>
+</div>
+</div>
+</div><!--container div close-->
+</nav><!--navbar close-->
+
+<script>
+var app=angular.module("info",['ngRoute','ngSanitize']);
+app.config(function($routeProvider){
+$routeProvider
+.when("/",{
+templateUrl : "infocampus.html"
+})
+.when("/about",{
+templateUrl : "about.html"
+})
+.when("/service",{
+templateUrl : "service.html"
+})
+});
+
+//controller start
+app.controller("main",function($scope){
+$scope.message="this is my main page";
+});
+app.controller("about",function($scope){
+$scope.message="this is about page";
+});
+app.controller("service",function($scope){
+$scope.message="this is contact page"
+});
+</script>
+</body>
+</html>
