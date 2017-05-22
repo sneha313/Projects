@@ -19,7 +19,7 @@ margin-top:-20px;
 <div ng-app="info">
 <!--navbar start-->
 
-<nav class="navbar navbar-default navbar-static-top">
+<nav class="navbar navbar-inverse navbar-static-top">
 <div class="container">
 <div class="navbar-header">
 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -35,7 +35,7 @@ margin-top:-20px;
 <ul class="nav navbar-nav">
 <li class="active"><a href="#/">Home</a></li>
 <li><a href="#about">About Us</a></li>
-<li><a href="#contact">Contact Us</a></li>
+<li><a href="#enquiry">Enquiry</a></li>
 <li class="dropdown"> 
 <a href="#services" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Our Services <span class="caret"></span></a>
               <ul class="dropdown-menu">
@@ -47,8 +47,6 @@ margin-top:-20px;
 </ul>
 
 <ul class="nav navbar-nav navbar-right">
-
-<li><a href="#enquiry">Enquiry</a></li>
 <li><a href="#SignUp">Sign Up</a></li>
 <li><a href="#Login">Login</a></li>
 </ul>
@@ -130,11 +128,26 @@ templateUrl : "home.html"
 .when("/about",{
 templateUrl : "about.html"
 })
-.when("/service",{
+.when("/services",{
 templateUrl : "service.html"
+})
+.when("/software",{
+templateUrl : "software.html"
+})
+.when("/application",{
+templateUrl : "application.html"
+})
+.when("/Logo",{
+templateUrl : "logo.html"
 })
 .when("/Login",{
 templateUrl : "login.html"
+})
+.when("/SignUp",{
+templateUrl : "signup.html"
+})
+.when("/enquiry",{
+templateUrl : "enquiry.html"
 })
 });
 
