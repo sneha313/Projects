@@ -7,7 +7,6 @@
 <script src="assets/js/bootstrap.js"></script>
 <script src="js/angular.js"></script>
 <script src="js/route.js"></script>
-<script src="js/sanitize.js"></script>
 <style>
 .carousel
 {
@@ -16,6 +15,8 @@ margin-top:-20px;
 </style>
 </head>
 <body>
+
+<div ng-app="info">
 <!--navbar start-->
 
 <nav class="navbar navbar-default navbar-static-top">
@@ -31,7 +32,6 @@ margin-top:-20px;
 </div><!--navbar header-->
 <div id="navbar" class="navbar-collapse collapse">
 
-<div ng-app="info">
 <ul class="nav navbar-nav">
 <li class="active"><a href="#/">Home</a></li>
 <li><a href="#about">About Us</a></li>
@@ -53,18 +53,79 @@ margin-top:-20px;
 <li><a href="#Login">Login</a></li>
 </ul>
 
-<div class="ng-view"></div>
-</div>
 </div>
 </div><!--container div close-->
 </nav><!--navbar close-->
 
+<div class="ng-view"></div>
+</div>
+<!--footer start-->
+	<div class="jumbotron footer" style="margin-bottom:-50px">
+		<div class="container-fluid">
+			<div class="row">
+
+            
+                <div class="col-sm-3"><!-- 3 column start -->
+                        
+                    
+                                <h3>Our services</h3>
+                                <hr>
+                               
+                                	<b><i class="fa fa-angle-double-right"></i> Software Development</b><br>
+                                    <b><i class="fa fa-angle-double-right"></i> Application Development</b><br>
+                                   <b><i class="fa fa-angle-double-right"></i>Games Development</b><br>
+                                    <b><i class="fa fa-angle-double-right"></i>Portal Development</b><br>
+                          
+                         
+                      
+                </div><!-- 3 column end -->
+                
+                
+                
+                <div class="col-sm-3"><!-- 3 column start -->
+            
+                                <h3>Quick links</h3>
+                                <hr>
+                                <ul>
+ 									<li><a  href="#"><i class="fa fa-angle-double-right"></i> Home</a></li>
+ 									<li><a  href="#"><i class="fa fa-angle-double-right"></i>About US</a></li>
+                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i>Contact US</a></li>
+                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i>Sign Up</a></li>
+                                    
+                                </ul>
+                   
+                         
+                      
+                </div><!-- 3column  end -->
+                
+                
+                
+                <div class="col-sm-6"><!-- 6 column start -->
+            
+                    
+                                <h3>Office Address</h3>
+                                <hr>
+                           <h4>Infocampus Logics pvt ltd</h4>
+                    
+						<p style="font-size:20px;">#a25, 1st floor, sai ram building outer ring road marathahalli 560037 
+						<br>
+						bangalore
+</p>
+                         
+                      
+                </div><!-- 6 column end -->
+                
+           
+			</div> <!--row end-->
+		</div> <!--fluid end-->
+	</div> <!--jumbo end-->
+
 <script>
-var app=angular.module("info",['ngRoute','ngSanitize']);
+var app=angular.module("info",['ngRoute']);
 app.config(function($routeProvider){
 $routeProvider
 .when("/",{
-templateUrl : "infocampus.html"
+templateUrl : "home.html"
 })
 .when("/about",{
 templateUrl : "about.html"
@@ -72,14 +133,14 @@ templateUrl : "about.html"
 .when("/service",{
 templateUrl : "service.html"
 })
+.when("/Login",{
+templateUrl : "login.html"
+})
 });
 
 //controller start
 app.controller("main",function($scope){
 $scope.message="this is my main page";
-});
-app.controller("about",function($scope){
-$scope.message="this is about page";
 });
 app.controller("service",function($scope){
 $scope.message="this is contact page"
