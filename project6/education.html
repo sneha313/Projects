@@ -1,0 +1,129 @@
+
+<div ng-controller="educational">
+<div class="row">
+<div class="col-sm-3">
+<ul class="list-group">
+<li class="list-group-item active"><a href="#profile" style="color:white"><b>Profile</b></a></li>
+<li class="list-group-item"><a href="#Personal"><i class="glyphicon glyphicon-chevron-right" style="font-size:0.8em;color:black"></i>&nbsp;&nbsp;My Home</a></li>
+<li class="list-group-item"><a href="#Personal"><i class="glyphicon glyphicon-chevron-right" style="font-size:0.8em;color:black"></i>&nbsp;&nbsp;Personal Info</a></li>
+<li class="list-group-item"><a href="#Educational"><i class="glyphicon glyphicon-chevron-right" style="font-size:0.8em;color:black"></i>&nbsp;&nbsp;Educational Info</a></li>
+<li class="list-group-item"><a href="#Professional"><i class="glyphicon glyphicon-chevron-right" style="font-size:0.8em;color:black"></i>&nbsp;&nbsp;Professional Info</a></li>
+<li class="list-group-item"><a href="#Professional"><i class="glyphicon glyphicon-chevron-right" style="font-size:0.8em;color:black"></i>&nbsp;&nbsp;Change Password</a></li>
+<li class="list-group-item"><a href="#Professional"><i class="glyphicon glyphicon-chevron-right" style="font-size:0.8em;color:black"></i>&nbsp;&nbsp;Account Settings</a></li>
+<li class="list-group-item"><a href="#Professional"><i class="glyphicon glyphicon-chevron-right" style="font-size:0.8em;color:black"></i>&nbsp;&nbsp;My Payment</a></li>
+<li class="list-group-item active"><a href="#Professional" style="color:white"><b>My Jobs Filter</b></a></li>
+<li class="list-group-item"><a href="#Browse"><i class="glyphicon glyphicon-chevron-right" style="font-size:0.8em;color:black"></i>&nbsp;&nbsp;Browse Job</a></li>
+<li class="list-group-item"><a href="#Shortlist"><i class="glyphicon glyphicon-chevron-right" style="font-size:0.8em;color:black"></i>&nbsp;&nbsp;Shortlisted Job</a></li>
+<li class="list-group-item"><a href="#Apply"><i class="glyphicon glyphicon-chevron-right" style="font-size:0.8em;color:black"></i>&nbsp;&nbsp;Applied Job</a></li>
+</ul>
+</div>
+<div class="col-sm-9">
+<!--<table class="table table-bordered table-hover">
+<caption class="text-center"><b>Personal Info</b>
+</caption>
+<tr>
+<th>Full Name</th>
+<th>Gender</th>
+<th>Marital Status</th>
+<th>Address Update</th>
+<th>Action</th>
+</tr>
+<tr ng-repeat="userrow in user"><!--using filter here for filtering  and sorting details in ascending order 
+if we want to sort data in descending order we will use minus name (-name) then it will give descending order data details
+<td>{{userrow.name}}</td>
+<td>{{userrow.gender}}</td>
+<td>{{userrow.marital}}</td>
+<td>{{userrow.address}}</td>
+<td><a href=''><i class="glyphicon glyphicon-edit"></i></a>
+&nbsp;
+<a href=''><i class="glyphicon glyphicon-trash"></i></a>
+</td>
+</tr>
+</table>-->
+<center>
+<h3><b>EDUCATIONAL INFORMATION</b></h3></center>
+<div class="row">
+<div class="col-sm-2"><label>10th Percentage:</label>
+</div>
+<div class="col-sm-4">
+<input type="text" class="form-control" placeholder="enter 10th percentage" value="78"></div>
+
+<div class="col-sm-2"><label>12th Percentage:</label>
+</div>
+<div class="col-sm-4">
+<input type="text" class="form-control" placeholder="enter name" value="67"></div>
+</div>
+<div class="row">
+<div class="col-sm-2"><label>Degree:</label>
+</div>
+<div class="col-sm-4">
+<select class="form-control">
+<option>--Choose--</option>
+</select>
+</div>
+
+<div class="col-sm-2"><label>Post Graduate Degree:</label>
+</div>
+<div class="col-sm-4"><select class="form-control">
+<option>--Choose--</option>
+</select>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-2"><label>Teacher Training Program:</label>
+</div>
+<div class="col-sm-4">
+<select class="form-control">
+<option>--Choose--</option>
+</select></div>
+<div class="col-sm-2"><label>Computer Skill:</label>
+</div>
+<div class="col-sm-4"><select class="form-control">
+<option>--Choose--</option>
+</select>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-2"><label>English Skill:</label>
+</div>
+<div class="col-sm-4"><select class="form-control">
+<option>--Choose--</option>
+</select></div>
+
+<div class="col-sm-2"><label>Other Achievements:</label>
+</div>
+<div class="col-sm-4">
+<textarea class="form-control"></textarea></div>
+</div>
+
+<div class="row">
+<div class="col-sm-12 text-center"><button class="btn btn-primary">Update</button>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<!--<input type="text" class="form-control" placeholder="enter 10th percentage">
+<input type="text" class="form-control" placeholder="enter 12th percentage">
+<select class="form-control">
+<option>choose degree</option>
+</select>
+<select class="form-control">
+<option>choose Post Graduate degree</option>
+</select>
+<select class="form-control">
+<option>choose Teacher training Program</option>
+</select>
+
+<select class="form-control">
+<option>choose Computer Skill</option>
+</select>
+
+<select class="form-control">
+<option>choose English Skill</option>
+</select>
+
+<textarea class="form-control" placeholder="other achievement"></textarea>
+-->

@@ -1,0 +1,107 @@
+<html>
+<head>
+<link rel="stylesheet" href="assets/css/bootstrap.css">
+<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="assets/css/carousel.css">
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="js/angular.js"></script>
+<script src="js/route.js"></script>
+<script src="js/sanitize.js"></script>
+<style>
+.carousel
+{
+margin-top:-20px;
+}
+</style>
+</head>
+<body>
+
+<div ng-app="info">
+<!--navbar start-->
+
+<nav class="navbar navbar-inverse navbar-static-top">
+<div class="container">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button><!--button close-->
+<a class="navbar-brand" href="#">Job Seeker</a>
+</div><!--navbar header-->
+<div id="navbar" class="navbar-collapse collapse">
+
+<ul class="nav navbar-nav">
+<li class="active"><a href="#/">Home</a></li>
+<li><a href="#about">About Us</a></li>
+<li><a href="#enquiry">Contact Us</a></li>
+<li><a href="#seeker">Job Seeker</a></li>
+<li><a href="#provider">Job Provider</a></li>
+
+</ul>
+
+<ul class="nav navbar-nav navbar-right">
+<li class="dropdown"> 
+<a href="#SignUp" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sign Up<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#Signupseeker">Job Seeker</a></li>
+                <li><a href="#Signupprovider">Job Provider</a></li>
+              </ul>
+            </li>
+			<li class="dropdown"> 
+<a href="#Login" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Login<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#Loginseeker">Job Seeker</a></li>
+                <li><a href="#Loginprovider">Job Provider</a></li>
+              </ul>
+            </li>
+</ul>
+<br><br><br>
+
+</div>
+</div><!--container div close-->
+</nav><!--navbar close-->
+<div class="container">
+
+
+<div class="row">
+
+<div class="col-sm-9">
+		<ng-view></ng-view></div>
+</div>
+</div>
+</div>
+
+<script>
+var obj=angular.module("info",['ngRoute','ngSanitize']);
+		obj.config(function($routeProvider) {
+		$routeProvider
+		.when("/", {
+        templateUrl : "seeker-registration.html"
+    })
+	.when("/Personal", {
+        templateUrl : "personal.html"
+    })
+	.when("/Educational", {
+	templateUrl : "education.html"
+	})
+	.when("/seeker", {
+	templateUrl : "seeker.html"
+	})
+	.when("/Home", {
+	templateUrl : "home.html"
+	})
+	.when("/Professional", {
+	templateUrl : "professionalExperience.html"
+	})
+	});
+	obj.controller("personal",function($scope,$http){
+	$http.get("personal.json").then(function(response){
+	$scope.user=response.data;
+	});
+	});
+</script>
+</body>
+</html>

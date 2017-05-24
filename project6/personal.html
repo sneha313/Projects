@@ -1,0 +1,119 @@
+<div ng-controller="personal">
+<div class="row">
+<div class="col-sm-3">
+<ul class="list-group">
+<li class="list-group-item active"><a href="#profile" style="color:white"><b>Profile</b></a></li>
+<li class="list-group-item"><a href="#Home"><i class="glyphicon glyphicon-chevron-right" style="font-size:0.8em;color:black"></i>&nbsp;&nbsp;My Home</a></li>
+<li class="list-group-item"><a href="#Personal"><i class="glyphicon glyphicon-chevron-right" style="font-size:0.8em;color:black"></i>&nbsp;&nbsp;Personal Info</a></li>
+<li class="list-group-item"><a href="#Educational"><i class="glyphicon glyphicon-chevron-right" style="font-size:0.8em;color:black"></i>&nbsp;&nbsp;Educational Info</a></li>
+<li class="list-group-item"><a href="#Professional"><i class="glyphicon glyphicon-chevron-right" style="font-size:0.8em;color:black"></i>&nbsp;&nbsp;Professional Info</a></li>
+<li class="list-group-item"><a href="#Professional"><i class="glyphicon glyphicon-chevron-right" style="font-size:0.8em;color:black"></i>&nbsp;&nbsp;Change Password</a></li>
+<li class="list-group-item"><a href="#Professional"><i class="glyphicon glyphicon-chevron-right" style="font-size:0.8em;color:black"></i>&nbsp;&nbsp;Account Settings</a></li>
+<li class="list-group-item"><a href="#Professional"><i class="glyphicon glyphicon-chevron-right" style="font-size:0.8em;color:black"></i>&nbsp;&nbsp;My Payment</a></li>
+<li class="list-group-item active"><a href="#Professional" style="color:white"><b>My Jobs Filter</b></a></li>
+<li class="list-group-item"><a href="#Browse"><i class="glyphicon glyphicon-chevron-right" style="font-size:0.8em;color:black"></i>&nbsp;&nbsp;Browse Job</a></li>
+<li class="list-group-item"><a href="#Shortlist"><i class="glyphicon glyphicon-chevron-right" style="font-size:0.8em;color:black"></i>&nbsp;&nbsp;Shortlisted Job</a></li>
+<li class="list-group-item"><a href="#Apply"><i class="glyphicon glyphicon-chevron-right" style="font-size:0.8em;color:black"></i>&nbsp;&nbsp;Applied Job</a></li>
+</ul>
+</div>
+<div class="col-sm-9">
+<!--<table class="table table-bordered table-hover">
+<caption class="text-center"><b>Personal Info</b>
+</caption>
+<tr>
+<th>Full Name</th>
+<th>Gender</th>
+<th>Marital Status</th>
+<th>Address Update</th>
+<th>Action</th>
+</tr>
+<tr ng-repeat="userrow in user"><!--using filter here for filtering  and sorting details in ascending order 
+if we want to sort data in descending order we will use minus name (-name) then it will give descending order data details
+<td>{{userrow.name}}</td>
+<td>{{userrow.gender}}</td>
+<td>{{userrow.marital}}</td>
+<td>{{userrow.address}}</td>
+<td><a href=''><i class="glyphicon glyphicon-edit"></i></a>
+&nbsp;
+<a href=''><i class="glyphicon glyphicon-trash"></i></a>
+</td>
+</tr>
+</table>-->
+<center>
+<h3>Personal Inforamtion</h3></center>
+<div class="row">
+<div class="col-sm-3"><label>First Name</label>
+</div>
+<div class="col-sm-9">
+<input type="text" class="form-control" placeholder="enter name" value="Sneha"></div>
+</div>
+<div class="row">
+<div class="col-sm-3"><label>Last Name</label>
+</div>
+<div class="col-sm-9">
+<input type="text" class="form-control" placeholder="enter name" value="Kumari"></div>
+</div>
+<div class="row">
+<div class="col-sm-3"><label>Mobile Number</label>
+</div>
+<div class="col-sm-9">
+<input type="text" class="form-control" placeholder="enter name" value="9570764343"></div>
+</div>
+<div class="row">
+<div class="col-sm-3"><label>Email Id</label>
+</div>
+<div class="col-sm-9">
+<input type="text" class="form-control" placeholder="enter name" value="sneha313singh@gmail.com"></div>
+</div>
+<div class="row">
+<div class="col-sm-3"><label>Gender</label>
+</div>
+<div class="col-sm-9">
+<input type="radio" ng-model="gender" value="male">Male
+<input type="radio" ng-model="gender"value="female">Female</div>
+</div>
+<div class="row">
+<div class="col-sm-3"><label>Marital Status</label>
+</div>
+<div class="col-sm-9">
+<input type="radio" ng-model="gender" value="married">Married
+<input type="radio" ng-model="gender"value="unmarried">Un Married</div>
+</div>
+<div class="row">
+<div class="col-sm-3"><label>Full Address</label>
+</div>
+<div class="col-sm-9">
+<textarea class="form-control" placeholder="enter address" value="kundalahalli"></textarea></div>
+</div>
+<div class="row">
+<div class="col-sm-3"><label>Pin code</label>
+</div>
+<div class="col-sm-9">
+<input type="text" class="form-control" value="7283387"></div>
+</div>
+<div class="row">
+<div class="col-sm-3"><label>State</label>
+</div>
+<div class="col-sm-9">
+<select class="form-control">
+<option>Choose State</option>
+</select>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-3"><label>District</label>
+</div>
+<div class="col-sm-9">
+<select class="form-control">
+<option>Choose District</option>
+</select>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12 text-center"><button class="btn btn-primary">Update</button>
+</div>
+
+</div>
+</div>
+</div>
+</div>
