@@ -12,6 +12,9 @@ background-color:white;
 border:1px solid white;
 height:20px;
 }
+ul li a:hover{
+font-color:green;
+}
 #photo:hover{
 background:white;
 }
@@ -27,32 +30,28 @@ background:white;
 <span class="icon-bar"></span>
 <span class="icon-bar"></span>
 </button><!--button close-->
-<a class="navbar-brand" href="#">Test</a>
+<a class="navbar-brand" href="#">Test &nbsp;&nbsp;&nbsp;|  </a>
 </div><!--navbar header-->
 <div id="navbar" class="navbar-collapse collapse">
 
 <ul class="nav navbar-nav">
-<li class="active"><a href="#/">Car Shopping</a></li>
+<li class="active"><a href="#car">Car Shopping</a></li>
 <li><a href="#sell">Sell Your Car</a></li>
-<li><a href="#learn">Learn More</a></li>
-
-</ul>
-
-<ul class="nav navbar-nav navbar-right">
 <li class="dropdown"> 
-<a href="#SignUp" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sign Up<span class="caret"></span></a>
+<a href="#learn" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Learn More<span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="#Signupseeker">Job Seeker</a></li>
                 <li><a href="#Signupprovider">Job Provider</a></li>
               </ul>
             </li>
-			<li class="dropdown"> 
-<a href="#Login" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Login<span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#Loginseeker">Job Seeker</a></li>
-                <li><a href="#Loginprovider">Job Provider</a></li>
-              </ul>
-            </li>
+
+</ul>
+
+<ul class="nav navbar-nav navbar-right">
+
+<li><a href="#SignUp">Sign Up / Log In</a></li>
+
+			
 </ul>
 <br><br><br>
 
@@ -225,6 +224,8 @@ background:white;
 <hr>
 <div class="row">
 <div class="col-sm-4">
+
+<div class="form-group">
 <div id="photo"><img src="1.jpg" width="280px" height="220px" style="border-radius:5px 5px 33px 5px;margin:10px;">
 <label style="background:#48D1CC;color:white; width:80px; height:28px;padding:5px; margin-top:-230px;margin-left:10px;border-radius:1px;opacity:0.89">
 <b>VERIFIED</b>
@@ -235,7 +236,10 @@ background:white;
 <div style="background:white;border:2px solid grey;width:40px;padding:1px"><b>2010</b></div>
 <label>76,000 miles &nbsp;&nbsp;<i class="fa fa-circle" style="font-size:0.3em;"> </i>&nbsp;&nbsp;&nbsp;&nbsp;Walnut Creek</label>
 </div></div>
+</div>
 <div class="col-sm-4">
+
+<div class="form-group">
 <div id="photo"><img src="1.jpg" width="280px" height="220px" style="border-radius:5px 5px 33px 5px;margin:10px;">
 <label style="background:#48D1CC;color:white; width:80px; height:28px;padding:5px; margin-top:-230px;margin-left:10px;border-radius:1px;opacity:0.89">
 <b>VERIFIED</b>
@@ -245,7 +249,11 @@ background:white;
 <p>Ford Fusion SEL<label style="margin-left:120px">$6799</label></p>
 <div style="background:white;border:2px solid grey;width:40px;padding:1px"><b>2010</b></div>
 <label>76,000 miles &nbsp;&nbsp;<i class="fa fa-circle" style="font-size:0.3em;"> </i>&nbsp;&nbsp;&nbsp;&nbsp;Walnut Creek</label>
-</div></div><div class="col-sm-4">
+</div></div>
+</div>
+<div class="col-sm-4">
+
+<div class="form-group">
 <div id="photo"><img src="1.jpg" width="280px" height="220px" style="border-radius:5px 5px 33px 5px;margin:10px;">
 <label style="background:#48D1CC;color:white; width:80px; height:28px;padding:5px; margin-top:-230px;margin-left:10px;border-radius:1px;opacity:0.89">
 <b>VERIFIED</b>
@@ -258,180 +266,8 @@ background:white;
 </div></div>
 </div>
 
-<div class="row">
-<div class="col-sm-4">
-<div id="photo"><img src="1.jpg" width="280px" height="220px" style="border-radius:5px 5px 33px 5px;margin:10px;">
-<label style="background:#48D1CC;color:white; width:80px; height:28px;padding:5px; margin-top:-230px;margin-left:10px;border-radius:1px;opacity:0.89">
-<b>VERIFIED</b>
-<i class="fa fa-heart-o" style="margin-left:250px; margin-top:-20px"></i>
-<img src="3.jpg" style="width:60px; height:60px;border-radius:30px;margin-top:134px;  border:2px solid white; margin-left:214px;">
-</label>
-<p>Ford Fusion SEL<label style="margin-left:120px">$6799</label></p>
-<div style="background:white;border:2px solid grey;width:40px;padding:1px"><b>2010</b></div>
-<label>76,000 miles &nbsp;&nbsp;<i class="fa fa-circle" style="font-size:0.3em;"> </i>&nbsp;&nbsp;&nbsp;&nbsp;Walnut Creek</label>
-</div></div>
-<div class="col-sm-4">
-<div id="photo"><img src="1.jpg" width="280px" height="220px" style="border-radius:5px 5px 33px 5px;margin:10px;">
-<label style="background:#48D1CC;color:white; width:80px; height:28px;padding:5px; margin-top:-230px;margin-left:10px;border-radius:1px;opacity:0.89">
-<b>VERIFIED</b>
-<i class="fa fa-heart-o" style="margin-left:250px; margin-top:-20px"></i>
-<img src="3.jpg" style="width:60px; height:60px;border-radius:30px;margin-top:134px;  border:2px solid white; margin-left:214px;">
-</label>
-<p>Ford Fusion SEL<label style="margin-left:120px">$6799</label></p>
-<div style="background:white;border:2px solid grey;width:40px;padding:1px"><b>2010</b></div>
-<label>76,000 miles &nbsp;&nbsp;<i class="fa fa-circle" style="font-size:0.3em;"> </i>&nbsp;&nbsp;&nbsp;&nbsp;Walnut Creek</label>
-</div></div><div class="col-sm-4">
-<div id="photo"><img src="1.jpg" width="280px" height="220px" style="border-radius:5px 5px 33px 5px;margin:10px;">
-<label style="background:#48D1CC;color:white; width:80px; height:28px;padding:5px; margin-top:-230px;margin-left:10px;border-radius:1px;opacity:0.89">
-<b>VERIFIED</b>
-<i class="fa fa-heart-o" style="margin-left:250px; margin-top:-20px"></i>
-<img src="3.jpg" style="width:60px; height:60px;border-radius:30px;margin-top:134px;  border:2px solid white; margin-left:214px;">
-</label>
-<p>Ford Fusion SEL<label style="margin-left:120px">$6799</label></p>
-<div style="background:white;border:2px solid grey;width:40px;padding:1px"><b>2010</b></div>
-<label>76,000 miles &nbsp;&nbsp;<i class="fa fa-circle" style="font-size:0.3em;"> </i>&nbsp;&nbsp;&nbsp;&nbsp;Walnut Creek</label>
-</div></div>
 </div>
 
-<div class="row">
-<div class="col-sm-4">
-<div id="photo"><img src="1.jpg" width="280px" height="220px" style="border-radius:5px 5px 33px 5px;margin:10px;">
-<label style="background:#48D1CC;color:white; width:80px; height:28px;padding:5px; margin-top:-230px;margin-left:10px;border-radius:1px;opacity:0.89">
-<b>VERIFIED</b>
-<i class="fa fa-heart-o" style="margin-left:250px; margin-top:-20px"></i>
-<img src="3.jpg" style="width:60px; height:60px;border-radius:30px;margin-top:134px;  border:2px solid white; margin-left:214px;">
-</label>
-<p>Ford Fusion SEL<label style="margin-left:120px">$6799</label></p>
-<div style="background:white;border:2px solid grey;width:40px;padding:1px"><b>2010</b></div>
-<label>76,000 miles &nbsp;&nbsp;<i class="fa fa-circle" style="font-size:0.3em;"> </i>&nbsp;&nbsp;&nbsp;&nbsp;Walnut Creek</label>
-</div></div>
-<div class="col-sm-4">
-<div id="photo"><img src="1.jpg" width="280px" height="220px" style="border-radius:5px 5px 33px 5px;margin:10px;">
-<label style="background:#48D1CC;color:white; width:80px; height:28px;padding:5px; margin-top:-230px;margin-left:10px;border-radius:1px;opacity:0.89">
-<b>VERIFIED</b>
-<i class="fa fa-heart-o" style="margin-left:250px; margin-top:-20px"></i>
-<img src="3.jpg" style="width:60px; height:60px;border-radius:30px;margin-top:134px;  border:2px solid white; margin-left:214px;">
-</label>
-<p>Ford Fusion SEL<label style="margin-left:120px">$6799</label></p>
-<div style="background:white;border:2px solid grey;width:40px;padding:1px"><b>2010</b></div>
-<label>76,000 miles &nbsp;&nbsp;<i class="fa fa-circle" style="font-size:0.3em;"> </i>&nbsp;&nbsp;&nbsp;&nbsp;Walnut Creek</label>
-</div></div><div class="col-sm-4">
-<div id="photo"><img src="1.jpg" width="280px" height="220px" style="border-radius:5px 5px 33px 5px;margin:10px;">
-<label style="background:#48D1CC;color:white; width:80px; height:28px;padding:5px; margin-top:-230px;margin-left:10px;border-radius:1px;opacity:0.89">
-<b>VERIFIED</b>
-<i class="fa fa-heart-o" style="margin-left:250px; margin-top:-20px"></i>
-<img src="3.jpg" style="width:60px; height:60px;border-radius:30px;margin-top:134px;  border:2px solid white; margin-left:214px;">
-</label>
-<p>Ford Fusion SEL<label style="margin-left:120px">$6799</label></p>
-<div style="background:white;border:2px solid grey;width:40px;padding:1px"><b>2010</b></div>
-<label>76,000 miles &nbsp;&nbsp;<i class="fa fa-circle" style="font-size:0.3em;"> </i>&nbsp;&nbsp;&nbsp;&nbsp;Walnut Creek</label>
-</div></div>
-</div>
-
-<div class="row">
-<div class="col-sm-4">
-<div id="photo"><img src="1.jpg" width="280px" height="220px" style="border-radius:5px 5px 33px 5px;margin:10px;">
-<label style="background:#48D1CC;color:white; width:80px; height:28px;padding:5px; margin-top:-230px;margin-left:10px;border-radius:1px;opacity:0.89">
-<b>VERIFIED</b>
-<i class="fa fa-heart-o" style="margin-left:250px; margin-top:-20px"></i>
-<img src="3.jpg" style="width:60px; height:60px;border-radius:30px;margin-top:134px;  border:2px solid white; margin-left:214px;">
-</label>
-<p>Ford Fusion SEL<label style="margin-left:120px">$6799</label></p>
-<div style="background:white;border:2px solid grey;width:40px;padding:1px"><b>2010</b></div>
-<label>76,000 miles &nbsp;&nbsp;<i class="fa fa-circle" style="font-size:0.3em;"> </i>&nbsp;&nbsp;&nbsp;&nbsp;Walnut Creek</label>
-</div></div>
-<div class="col-sm-4">
-<div id="photo"><img src="1.jpg" width="280px" height="220px" style="border-radius:5px 5px 33px 5px;margin:10px;">
-<label style="background:#48D1CC;color:white; width:80px; height:28px;padding:5px; margin-top:-230px;margin-left:10px;border-radius:1px;opacity:0.89">
-<b>VERIFIED</b>
-<i class="fa fa-heart-o" style="margin-left:250px; margin-top:-20px"></i>
-<img src="3.jpg" style="width:60px; height:60px;border-radius:30px;margin-top:134px;  border:2px solid white; margin-left:214px;">
-</label>
-<p>Ford Fusion SEL<label style="margin-left:120px">$6799</label></p>
-<div style="background:white;border:2px solid grey;width:40px;padding:1px"><b>2010</b></div>
-<label>76,000 miles &nbsp;&nbsp;<i class="fa fa-circle" style="font-size:0.3em;"> </i>&nbsp;&nbsp;&nbsp;&nbsp;Walnut Creek</label>
-</div></div><div class="col-sm-4">
-<div id="photo"><img src="1.jpg" width="280px" height="220px" style="border-radius:5px 5px 33px 5px;margin:10px;">
-<label style="background:#48D1CC;color:white; width:80px; height:28px;padding:5px; margin-top:-230px;margin-left:10px;border-radius:1px;opacity:0.89">
-<b>VERIFIED</b>
-<i class="fa fa-heart-o" style="margin-left:250px; margin-top:-20px"></i>
-<img src="3.jpg" style="width:60px; height:60px;border-radius:30px;margin-top:134px;  border:2px solid white; margin-left:214px;">
-</label>
-<p>Ford Fusion SEL<label style="margin-left:120px">$6799</label></p>
-<div style="background:white;border:2px solid grey;width:40px;padding:1px"><b>2010</b></div>
-<label>76,000 miles &nbsp;&nbsp;<i class="fa fa-circle" style="font-size:0.3em;"> </i>&nbsp;&nbsp;&nbsp;&nbsp;Walnut Creek</label>
-</div></div>
-</div>
-
-<div class="row">
-<div class="col-sm-4">
-<div id="photo"><img src="1.jpg" width="280px" height="220px" style="border-radius:5px 5px 33px 5px;margin:10px;">
-<label style="background:#48D1CC;color:white; width:80px; height:28px;padding:5px; margin-top:-230px;margin-left:10px;border-radius:1px;opacity:0.89">
-<b>VERIFIED</b>
-<i class="fa fa-heart-o" style="margin-left:250px; margin-top:-20px"></i>
-<img src="3.jpg" style="width:60px; height:60px;border-radius:30px;margin-top:134px;  border:2px solid white; margin-left:214px;">
-</label>
-<p>Ford Fusion SEL<label style="margin-left:120px">$6799</label></p>
-<div style="background:white;border:2px solid grey;width:40px;padding:1px"><b>2010</b></div>
-<label>76,000 miles &nbsp;&nbsp;<i class="fa fa-circle" style="font-size:0.3em;"> </i>&nbsp;&nbsp;&nbsp;&nbsp;Walnut Creek</label>
-</div></div>
-<div class="col-sm-4">
-<div id="photo"><img src="1.jpg" width="280px" height="220px" style="border-radius:5px 5px 33px 5px;margin:10px;">
-<label style="background:#48D1CC;color:white; width:80px; height:28px;padding:5px; margin-top:-230px;margin-left:10px;border-radius:1px;opacity:0.89">
-<b>VERIFIED</b>
-<i class="fa fa-heart-o" style="margin-left:250px; margin-top:-20px"></i>
-<img src="3.jpg" style="width:60px; height:60px;border-radius:30px;margin-top:134px;  border:2px solid white; margin-left:214px;">
-</label>
-<p>Ford Fusion SEL<label style="margin-left:120px">$6799</label></p>
-<div style="background:white;border:2px solid grey;width:40px;padding:1px"><b>2010</b></div>
-<label>76,000 miles &nbsp;&nbsp;<i class="fa fa-circle" style="font-size:0.3em;"> </i>&nbsp;&nbsp;&nbsp;&nbsp;Walnut Creek</label>
-</div></div><div class="col-sm-4">
-<div id="photo"><img src="1.jpg" width="280px" height="220px" style="border-radius:5px 5px 33px 5px;margin:10px;">
-<label style="background:#48D1CC;color:white; width:80px; height:28px;padding:5px; margin-top:-230px;margin-left:10px;border-radius:1px;opacity:0.89">
-<b>VERIFIED</b>
-<i class="fa fa-heart-o" style="margin-left:250px; margin-top:-20px"></i>
-<img src="3.jpg" style="width:60px; height:60px;border-radius:30px;margin-top:134px;  border:2px solid white; margin-left:214px;">
-</label>
-<p>Ford Fusion SEL<label style="margin-left:120px">$6799</label></p>
-<div style="background:white;border:2px solid grey;width:40px;padding:1px"><b>2010</b></div>
-<label>76,000 miles &nbsp;&nbsp;<i class="fa fa-circle" style="font-size:0.3em;"> </i>&nbsp;&nbsp;&nbsp;&nbsp;Walnut Creek</label>
-</div></div>
-</div>
-
-<div class="row">
-<div class="col-sm-4">
-<div id="photo"><img src="1.jpg" width="280px" height="220px" style="border-radius:5px 5px 33px 5px;margin:10px;">
-<label style="background:#48D1CC;color:white; width:80px; height:28px;padding:5px; margin-top:-230px;margin-left:10px;border-radius:1px;opacity:0.89">
-<b>VERIFIED</b>
-<i class="fa fa-heart-o" style="margin-left:250px; margin-top:-20px"></i>
-<img src="3.jpg" style="width:60px; height:60px;border-radius:30px;margin-top:134px;  border:2px solid white; margin-left:214px;">
-</label>
-<p>Ford Fusion SEL<label style="margin-left:120px">$6799</label></p>
-<div style="background:white;border:2px solid grey;width:40px;padding:1px"><b>2010</b></div>
-<label>76,000 miles &nbsp;&nbsp;<i class="fa fa-circle" style="font-size:0.3em;"> </i>&nbsp;&nbsp;&nbsp;&nbsp;Walnut Creek</label>
-</div></div>
-<div class="col-sm-4">
-<div id="photo"><img src="1.jpg" width="280px" height="220px" style="border-radius:5px 5px 33px 5px;margin:10px;">
-<label style="background:#48D1CC;color:white; width:80px; height:28px;padding:5px; margin-top:-230px;margin-left:10px;border-radius:1px;opacity:0.89">
-<b>VERIFIED</b>
-<i class="fa fa-heart-o" style="margin-left:250px; margin-top:-20px"></i>
-<img src="3.jpg" style="width:60px; height:60px;border-radius:30px;margin-top:134px;  border:2px solid white; margin-left:214px;">
-</label>
-<p>Ford Fusion SEL<label style="margin-left:120px">$6799</label></p>
-<div style="background:white;border:2px solid grey;width:40px;padding:1px"><b>2010</b></div>
-<label>76,000 miles &nbsp;&nbsp;<i class="fa fa-circle" style="font-size:0.3em;"> </i>&nbsp;&nbsp;&nbsp;&nbsp;Walnut Creek</label>
-</div></div><div class="col-sm-4">
-<div id="photo"><img src="1.jpg" width="280px" height="220px" style="border-radius:5px 5px 33px 5px;margin:10px;">
-<label style="background:#48D1CC;color:white; width:80px; height:28px;padding:5px; margin-top:-230px;margin-left:10px;border-radius:1px;opacity:0.89">
-<b>VERIFIED</b>
-<i class="fa fa-heart-o" style="margin-left:250px; margin-top:-20px"></i>
-<img src="3.jpg" style="width:60px; height:60px;border-radius:30px;margin-top:134px;  border:2px solid white; margin-left:214px;">
-</label>
-<p>Ford Fusion SEL<label style="margin-left:120px">$6799</label></p>
-<div style="background:white;border:2px solid grey;width:40px;padding:1px"><b>2010</b></div>
-<label>76,000 miles &nbsp;&nbsp;<i class="fa fa-circle" style="font-size:0.3em;"> </i>&nbsp;&nbsp;&nbsp;&nbsp;Walnut Creek</label>
-</div></div>
-</div>
 <div class="pagination">
 <li><a href="#" style="color:grey">Previous</a></li>
 <li class="active"><a href="#"  style="background:#90EE90;border:1px solid #90EE90">1</a></li>
