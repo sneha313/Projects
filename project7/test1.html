@@ -1,0 +1,257 @@
+<html>
+<head>
+<link rel="stylesheet" href="assets/css/bootstrap.css">
+<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="assets/css/carousel.css">
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+
+<style>
+.navbar-default
+{
+background-color:white;
+border:1px solid white;
+height:20px;
+}
+
+</style>
+<script>
+function test()
+{
+alert("it is working well");
+}
+</script>
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-static-top">
+<div class="container">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button><!--button close-->
+<a class="navbar-brand" href="#">Test &nbsp;&nbsp;&nbsp;|  </a>
+</div><!--navbar header-->
+<div id="navbar" class="navbar-collapse collapse">
+
+<ul class="nav navbar-nav">
+<li><a href="#car">Car Shopping</a></li>
+<li><a href="#sell" onclick="test()">Sell Your Car</a>
+
+</li>
+<li class="dropdown"> 
+<a href="#learn" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Learn More<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#learn">learn</a></li>
+                <li><a href="#learn">learn</a></li>
+                <li><a href="#learn">learn</a></li>
+                <li><a href="#learn">learn</a></li>
+                <li><a href="#learn">learn</a></li>
+              </ul>
+            </li>
+
+</ul>
+
+<ul class="nav navbar-nav navbar-right">
+
+<li><a href="#SignUp">Sign Up / Log In</a></li>
+
+			
+</ul>
+<br><br><br>
+
+</div>
+</div><!--container div close-->
+</nav><!--navbar close-->
+
+<div class="container-fluid well">
+<div class="row">
+<div class="col-sm-3" style="background:white">
+<div class="row">
+<div class="col-sm-12">
+<p><i class="fa fa-filter"></i><label>&nbsp;&nbsp;&nbsp;Filters </label><label style="color:blue;margin-left:160px;">clear</label></p>
+<hr>
+</div>
+</div>
+
+<div class="row">
+<div class="col-sm-12"><label>Make and Model </label></div>
+</div>
+
+<div class="row">
+<div class="col-sm-12"><select class="form-control">
+<option>Make</option>
+</select></div>
+</div>
+
+<div class="row">
+<div class="col-sm-12"><select class="form-control">
+<option>Model</option>
+</select></div>
+</div>
+<hr>
+<div class="row">
+<div class="col-sm-12">
+<label>Price</label>
+</div>
+</div>
+
+<div class="row">
+<div class="col-sm-6"><select class="form-control" style="border-radius:0px">
+<option>Min</option>
+</select></div>
+<div class="col-sm-6"  style="margin-left:-30px;"><select class="form-control" style="border-radius:0px">
+<option>Max</option>
+</select></div>
+</div>
+<hr>
+
+<div class="row">
+<div class="col-sm-12">
+<label>Mileage</label>
+</div>
+</div>
+
+<div class="row">
+<div class="col-sm-6"><select class="form-control" style="border-radius:0px">
+<option>Min</option>
+</select></div>
+<div class="col-sm-6"  style="margin-left:-30px;"><select class="form-control" style="border-radius:0px">
+<option>Max</option>
+</select></div>
+</div>
+<hr>
+
+<div class="row">
+<div class="col-sm-12">
+<label>Year</label>
+</div>
+</div>
+
+<div class="row">
+<div class="col-sm-6"><select class="form-control" style="border-radius:0px">
+<option>Min</option>
+</select></div>
+<div class="col-sm-6"  style="margin-left:-30px;"><select class="form-control" style="border-radius:0px">
+<option>Max</option>
+</select></div>
+</div>
+<hr>
+<div class="row">
+<div class="col-sm-12">
+<label>Features</label>
+</div>
+</div>
+
+<div class="row">
+<div class="col-sm-12"><select class="form-control" style="border-radius:0px">
+<option>Add Feature</option>
+</select></div>
+</div>
+<hr>
+<div class="row">
+<div class="col-sm-12">
+<label>Categories</label>
+</div>
+</div>
+
+<div class="row">
+<div class="col-sm-12"><select class="form-control" style="border-radius:0px">
+<option>Add CAtegory</option>
+</select></div>
+</div>
+<hr>
+<div class="row">
+<div class="col-sm-12 text-center">
+<button class="btn btn-primary">Save Your Search</button>
+</div>
+</div>
+</div><!--3 div close-->
+<div class="col-sm-9">
+<div class="row">
+<div class="col-sm-2">
+<div class="row">
+<div class="col-sm-12">
+<i class="fa fa-map-marker"></i><label>Location</label></div>
+</div>
+<div class="row">
+<div class="col-sm-12"><input type="text" class="form-control" placeholder="enter ZIP code"></div>
+</div>
+</div>
+
+<div class="col-sm-2">
+<div class="row">
+<div class="col-sm-12"><label>Distance</label></div>
+</div>
+<div class="row">
+<div class="col-sm-12"><select class="form-control">
+<option>10 miles</option>
+<option>25 miles</option>
+<option>35 miles</option>
+<option>50 miles</option>
+<option>100 miles</option>
+<option>300 miles</option>
+<option>500 miles</option>
+</select></div>
+</div>
+</div>
+<div class="col-sm-3">
+<div class="row">
+<div class="col-sm-12"><label>Sorting By</label></div>
+</div>
+<div class="row">
+<div class="col-sm-12"><select class="form-control">
+<option>best match</option>
+<option>price</option>
+<option>year</option>
+</select></div>
+</div>
+</div>
+
+<div class="col-sm-3">
+<div class="row">
+<div class="col-sm-12"><label>Showing</label></div>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<label style="color:grey">1-24 of 264 listings</label></div>
+</div>
+</div>
+
+<div class="col-sm-1">
+<div class="row">
+<div class="col-sm-12"></div>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<div style="height:25px; width:25px; border:1px solid grey; padding:5px; margin-left:60px; margin-top:8px;">
+<i class="fa fa-list-ul" style="size:1.5em"></i></div>  </div>
+</div>
+</div>
+
+<div class="col-sm-1">
+<div class="row">
+<div class="col-sm-12"></div>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<div style="height:25px; width:25px; border:1px solid grey; padding:5px;margin-top:8px;">
+<i class="fa fa-th" style="size:1.5em"></i></div>  </div>
+</div>
+</div>
+</div>
+<hr>
+<div class="row">
+<div class="col-sm-4"><img  class="img-responsive" src="1.jpg"  width="280px" height="220px"></div> 
+<div class="col-sm-4"><img  class="img-responsive" src="1.jpg"  width="280px" height="220px"></div>
+<div class="col-sm-4"><img  class="img-responsive" src="1.jpg"  width="280px" height="220px"></div>
+
+</div>
+</div><!--9 div close-->
+</div>
+</div>
+</body>
+</html>

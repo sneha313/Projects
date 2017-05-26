@@ -1,21 +1,21 @@
-<div class="row">
-<div class="col-sm-3">
-<ul class="list-group">
-<li class="list-group-item active"><a href="#profile" style="color:white"><b>Profile</b></a></li>
-<li class="list-group-item"><a href="#Personal"><i class="glyphicon glyphicon-chevron-right" style="font-size:0.8em;color:black"></i>&nbsp;&nbsp;My Home</a></li>
-<li class="list-group-item"><a href="#Personal"><i class="glyphicon glyphicon-chevron-right" style="font-size:0.8em;color:black"></i>&nbsp;&nbsp;Personal Info</a></li>
-<li class="list-group-item"><a href="#Educational"><i class="glyphicon glyphicon-chevron-right" style="font-size:0.8em;color:black"></i>&nbsp;&nbsp;Educational Info</a></li>
-<li class="list-group-item"><a href="#Professional"><i class="glyphicon glyphicon-chevron-right" style="font-size:0.8em;color:black"></i>&nbsp;&nbsp;Professional Info</a></li>
-<li class="list-group-item"><a href="#Professional"><i class="glyphicon glyphicon-chevron-right" style="font-size:0.8em;color:black"></i>&nbsp;&nbsp;Change Password</a></li>
-<li class="list-group-item"><a href="#Professional"><i class="glyphicon glyphicon-chevron-right" style="font-size:0.8em;color:black"></i>&nbsp;&nbsp;Account Settings</a></li>
-<li class="list-group-item"><a href="#Professional"><i class="glyphicon glyphicon-chevron-right" style="font-size:0.8em;color:black"></i>&nbsp;&nbsp;My Payment</a></li>
-<li class="list-group-item active"><a href="#Professional" style="color:white"><b>My Jobs Filter</b></a></li>
-<li class="list-group-item"><a href="#Browse"><i class="glyphicon glyphicon-chevron-right" style="font-size:0.8em;color:black"></i>&nbsp;&nbsp;Browse Job</a></li>
-<li class="list-group-item"><a href="#Shortlist"><i class="glyphicon glyphicon-chevron-right" style="font-size:0.8em;color:black"></i>&nbsp;&nbsp;Shortlisted Job</a></li>
-<li class="list-group-item"><a href="#Apply"><i class="glyphicon glyphicon-chevron-right" style="font-size:0.8em;color:black"></i>&nbsp;&nbsp;Applied Job</a></li>
-</ul>
-</div>
-<div class="col-sm-9">
+<head>
+<script>
+function Job()
+{
+
+document.getElementById("fresher").style.display="block";
+document.getElementById("experience").style.display="none";
+
+}
+function Job2()
+{
+document.getElementById("experience").style.display="block";
+document.getElementById("fresher").style.display="none";
+
+
+}
+</script>
+</head>
 <center>
 <h3>PROFESSIONAL INFORMATION</h3>
 </center>
@@ -24,11 +24,12 @@
 <label>Your Experience:</label>
 </div>
 <div class="col-sm-8">
-<input type="radio" id="fresher" name="education" value="fresher">Fresher
-<input type="radio" id="exp" name="education" value="eperience">Experience
+<input type="radio" id="freshers" name="education" value="fresher" onclick="Job()">Fresher
+<input type="radio" id="exp" name="education" value="eperience"  onclick="Job2()">Experience
 </div>
 </div>
 <hr>
+<div id="fresher" style="display:none">
 <h4>Preferred Job Location:</h4>
 <div class="row">
 <div class="col-sm-2">
@@ -61,8 +62,51 @@
 <div class="row">
 <div class="col-sm-12 text-center">
 <button class="btn btn-primary">Update</button></div>
-
+</div>
 </div>
 
+<div id="experience" style="display:none">
+<div class="row">
+<div class="col-sm-2">
+<label>Current Designation</label></div>
+<div class="col-sm-4"><select class="form-control">
+<option>--choose--</option>
+</select></div>
+<div class="col-sm-2">
+<label>School Type</label></div>
+<div class="col-sm-4">
+<select class="form-control">
+<option>--choose--</option>
+</select>
 </div>
+</div>
+
+<div class="row">
+<div class="col-sm-2">
+<label>Experience</label></div>
+<div class="col-sm-4"><select class="form-control">
+<option>--choose--</option>
+</select></div>
+<div class="col-sm-2">
+<label>Current Salary</label></div>
+<div class="col-sm-4">
+<select class="form-control">
+<option>--choose--</option>
+</select>
+</div>
+</div>
+
+<div class="row">
+<div class="col-sm-2">
+<label>School Syllabus</label></div>
+<div class="col-sm-4"><select class="form-control">
+<option>--choose--</option>
+</select></div>
+</div>
+
+<div class="row">
+<div class="col-sm-12 text-center">
+<button class="btn btn-primary">Update</button></div>
+</div>
+
 </div>
